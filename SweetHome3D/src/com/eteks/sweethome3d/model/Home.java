@@ -153,11 +153,12 @@ public class Home implements Serializable, Cloneable {
     this.furniture = new ArrayList<HomePieceOfFurniture>(furniture);
     this.walls = new ArrayList<Wall>();
     this.wallHeight = wallHeight;
-    this.furnitureVisibleProperties = Arrays.asList(new HomePieceOfFurniture.SortableProperty [] {
+     this.furnitureVisibleProperties = Arrays.asList(new HomePieceOfFurniture.SortableProperty [] {
         HomePieceOfFurniture.SortableProperty.NAME,
         HomePieceOfFurniture.SortableProperty.WIDTH,
         HomePieceOfFurniture.SortableProperty.DEPTH,
         HomePieceOfFurniture.SortableProperty.HEIGHT,
+        HomePieceOfFurniture.SortableProperty.VOLUME,
         HomePieceOfFurniture.SortableProperty.VISIBLE});
     // Init transient lists and other fields
     init(true);
